@@ -7,8 +7,8 @@ nmap <Leader>rxm :ExtractMethod<Enter>
 nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
 
 
-source .vimrc.plugins
-source .vimrc.amix
+source $HOME/.vim/.vimrc.plugins
+source $HOME/.vim/.vimrc.amix
 
 "########################
 "put local settings here:
