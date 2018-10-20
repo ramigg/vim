@@ -10,14 +10,24 @@ call vundle#begin('~/.vim/plugins')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
 
+" node.js
+Plugin 'moll/vim-node'
+
+" automatically regenerate ctags
+Plugin 'ludovicchabant/vim-gutentags'
+
+" make netrw look nicer
+Plugin 'tpope/vim-vinegar'
+
+" nova color scheme
+Plugin 'sheerun/vim-polyglot'
+Plugin 'trevordmiller/nova-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -13,36 +13,6 @@ source $HOME/.vim/.vimrc.amix
 "########################
 "put local settings here:
 
-"###############
-" https://medium.com/@victormours/a-better-nerdtree-setup-3d3921abc0b9
-" NerdTree setup
-
-" Open by default
-function! StartUp()
-    if 0 == argc()
-        NERDTree
-    end
-endfunction
-
-autocmd VimEnter * call StartUp()
-
-" toggle tree
-nnoremap <Leader>f :NERDTreeToggle<Enter>
-
-" open tree and move cursor to the current file
-nnoremap <silent> <Leader>v :NERDTreeFind<CR>
-
-" Closing automatically after openning a file
-let NERDTreeQuitOnOpen = 1
-
-" Automatically delete the buffer of the file you just deleted with NerdTree:
-let NERDTreeAutoDeleteBuffer = 1
-
-" make it prettier:
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-
-
 "#####################
 "Splits
 " Quick jumping between splits
@@ -59,3 +29,14 @@ map Q  <C-W>q
 " Open splits on the right and below
 set splitbelow
 set splitright
+
+" line numbers - hybrid
+set number relativenumber
+
+" Maximize/minimize current buffer
+nnoremap <C-W>M <C-W>\|<C-W>_
+nnoremap <C-W>m <C-W>=
+
+let g:netrw_liststyle = 1
+let g:netrw_sizestyle= "H"
+
