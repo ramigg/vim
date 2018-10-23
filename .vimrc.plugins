@@ -29,6 +29,9 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'trevordmiller/nova-vim'
 
+" nice status bar
+Plugin 'vim-airline/vim-airline'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:

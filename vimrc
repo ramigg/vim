@@ -40,3 +40,5 @@ nnoremap <C-W>m <C-W>=
 let g:netrw_liststyle = 1
 let g:netrw_sizestyle= "H"
 
+" airline settings
+let g:airline_powerline_fonts = 1
