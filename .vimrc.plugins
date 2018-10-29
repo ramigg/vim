@@ -23,11 +23,15 @@ Plugin 'moll/vim-node'
 Plugin 'ludovicchabant/vim-gutentags'
 
 " make netrw look nicer
-Plugin 'tpope/vim-vinegar'
+"Plugin 'tpope/vim-vinegar'
+
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
 
 " nova color scheme
 Plugin 'sheerun/vim-polyglot'
 Plugin 'trevordmiller/nova-vim'
+Plugin 'ryanoasis/vim-devicons'
 
 " nice status bar
 Plugin 'vim-airline/vim-airline'

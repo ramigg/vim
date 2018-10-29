@@ -30,6 +30,18 @@ map Q  <C-W>q
 set splitbelow
 set splitright
 
+" manage tabs easily
+map <C-E>t :tabnew<CR>:term ++curwin<CR>
+tmap <C-E>t <C-W>:tabnew<CR>:term ++curwin<CR>
+map <C-E>e :tabnew<CR>:Ex<CR>
+tmap <C-E>e <C-W>:tabnew<CR>:Ex<CR>
+map <C-E>n :tabnew<CR>
+tmap <C-E>n <C-W>:tabnew<CR>
+map <C-E><Left> :tabprevious<CR>
+tmap <C-E><Left> <C-W>:tabprevious<CR>
+map <C-E><Right> :tabnext<CR>
+tmap <C-E><Right> <C-W>:tabnext<CR>
+
 " line numbers - hybrid
 set number relativenumber
 
@@ -37,8 +49,11 @@ set number relativenumber
 nnoremap <C-W>M <C-W>\|<C-W>_
 nnoremap <C-W>m <C-W>=
 
-let g:netrw_liststyle = 1
-let g:netrw_sizestyle= "H"
 
+
+"let g:netrw_liststyle = 1
+"let g:netrw_sizestyle= "H"
+"let g:netrw_preview = 0 " show preview in vertical split
+"let g:netrw_winsize = 30
 " airline settings
 let g:airline_powerline_fonts = 1
