@@ -57,3 +57,27 @@ nnoremap <C-W>m <C-W>=
 "let g:netrw_winsize = 30
 " airline settings
 let g:airline_powerline_fonts = 1
+
+" nerdtree
+" Open by default
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"Finding the right file
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+" open nerdtree on  the current edited file
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+" automatically close NerdTree when you open a file
+let NERDTreeQuitOnOpen = 1
+
+" automatically close a tab if the only remaining window is NerdTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" make it prettier
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+" Automatically delete the buffer of the file you just deleted with NerdTree
+let NERDTreeAutoDeleteBuffer = 1
+

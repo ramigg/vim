@@ -22,11 +22,9 @@ Plugin 'moll/vim-node'
 " automatically regenerate ctags
 Plugin 'ludovicchabant/vim-gutentags'
 
-" make netrw look nicer
-"Plugin 'tpope/vim-vinegar'
-
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
+"nerdtree
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " nova color scheme
 Plugin 'sheerun/vim-polyglot'
